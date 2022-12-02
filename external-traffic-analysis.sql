@@ -12,6 +12,7 @@ CREATE TEMP FUNCTION IP_TO_TYPE(ip INT64) AS (
     WHEN ip > 3512047616 AND ip < 3512048639 THEN 'health-check'
     WHEN ip > 3512060928 AND ip < 3512061951 THEN 'health-check'
     WHEN ip > 2852039166 AND ip < 2852039166 THEN 'health-check'
+    WHEN ip > 2194866176 AND ip < 2194867199 THEN 'gcp-proxy-lb'
     WHEN ip > 394498192 AND ip < 394498207 THEN 'gcp-asia-east1'
     WHEN ip > 575668224 AND ip < 575799295 THEN 'gcp-asia-east1'
     WHEN ip > 576886784 AND ip < 576887807 THEN 'gcp-asia-east1'
